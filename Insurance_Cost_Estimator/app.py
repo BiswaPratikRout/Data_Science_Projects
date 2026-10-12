@@ -11,10 +11,8 @@ st.set_page_config(
     page_title = "Insurance Cost Estimator",
     layout = "wide"
 )
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-MODEL_PATH = os.path.join(BASE_DIR, "insurance_model.pkl")
-FEATURES_PATH = os.path.join(BASE_DIR, "model_features.pkl")
+MODEL_PATH = "insurance_model.pkl"
+FEATURES_PATH = "model_features.pkl"
 
 REF_AVG_NON_SMOKER = 8400
 REF_AVG_SMOKER = 32000
