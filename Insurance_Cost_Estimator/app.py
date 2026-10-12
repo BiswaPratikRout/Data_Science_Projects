@@ -21,10 +21,7 @@ REF_AVG_SMOKER = 32000
 
 @st.cache_resource
 def load_artifacts():
-    st.write("App directory:", os.path.dirname(os.path.abspath(__file__)))
-    st.write("Model file exists:", os.path.exists(MODEL_PATH))
-    st.write("Features file exists:", os.path.exists(FEATURES_PATH))
-
+    
     if not os.path.exists(MODEL_PATH) or not os.path.exists(FEATURES_PATH):
         return None, None
 
